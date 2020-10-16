@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Community the Game</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <div class="modal">
+      <div id="loginForms" class="login-form">
+        <form id="sign-in" name="sign-in" class="sign-in">
+      <h1 class="title">Community</h1>
+      <input type="email" name="credentials[email]" placeholder="Email" class="sign-in-form" autocomplete="email username">
+      <input type="password" name="credentials[password]" placeholder="Password" class="sign-in-form" autocomplete="password">
+      <p id="signInError" class="signInError"></p>
+      <input type="submit" value="Sign In!" class="sign-in-button submit-button">
+    </form>
+    <button id="loginToSignUp" class="login-to-signup">Sign up</button>
+  </div>
+  <div id="signUpForm" class="sign-up-form">
+    <form id="sign-up" class="sign-up">
+      <input type="text" name="credentials[email]" placeholder="Email" class="sign-up-form" autocomplete="email username">
+      <input type="password" name="credentials[password]" placeholder="Password" class="sign-up-form" autocomplete="password">
+      <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" class="sign-up-form" autocomplete="password">
+      <p id="signUpError" class="signUpError"></p>
+      <input type="submit" value="Sign Up!" class="signUpButton submit-button">
+    </form>
+    <button id="back-to-login">Back to Login</button>
+  </div>
+  <div id="accounts-page" class="accounts-page">
+    <p id="accountError" class="accountError"></p>
+  <button id="play" class="account-button">Play</button>
+  <button id="alreadyplayed" class="account-button">Play</button>
+  <button id="change-password" class="account-button">Change Password</button>
+<!--  <button id="see-character" class="account-button">View Character</button> -->
+  <button id="create-character" class="account-button">Create Character</button>
+  <button id="destroychar" class="account-button">Delete Character</button>
+  <button id="logout" class="account-button">Log Out</button>
+</div>
+<div id="changepass">
+  <p id="password-error"></p>
+<form id="change-password-form" class="passwordForm">
+  <input type="password" name="passwords[old]" placeholder="old password" class="passinput">
+  <input type="password" name="passwords[new]" placeholder="new password" class="passinput">
+  <p id="changePassError" class="signInError"> </p>
+  <input type="submit" id="changePasswordButton" class="changePassSub submit-button">
+</form>
+<button id="passtoAccount" class="changePassSub">Account</button>
+</div>
+</div>
+<span style="font-family: 'Oxygen Mono', monospace;">&nbsp;</span>
+<div class="canvaswrapper">
+</div>
+    <h1 class="canvasH1">Community</h1>
+  <canvas width="1024" height="576"></canvas>
+  <div id="chat" class="chat">
+    <p id="serverstatus" class="serverstatus">Currently Connected</p>
+    <form id="text-submit">
+    <input type="text" id="text-input" class="chat-text" maxlength="25">
+    <input type='submit' id='submit-text-button' class="submit-button">
+        </form>
+        <button id="playtoAccount">Account</button>
+      </div>
+      <div id="computerBrowser" class="computerBrowser">
+        <button id="browserToCanvas">back</button>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+    </body>
+</html>
